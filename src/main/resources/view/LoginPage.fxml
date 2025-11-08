@@ -16,7 +16,7 @@
       </ImageView>
       <JFXTextField fx:id="txtEmail" focusColor="#405aa800" layoutX="342.0" layoutY="124.0" prefHeight="19.0" prefWidth="186.0" unFocusColor="#4d4d4d00" />
       <JFXPasswordField fx:id="txtPassword" focusColor="#405aa800" layoutX="342.0" layoutY="184.0" prefHeight="25.0" prefWidth="186.0" unFocusColor="#4d4d4d00" />
-      <JFXButton fx:id="btnLogin" layoutX="394.0" layoutY="236.0" onAction="#btnLoginOnaction" opacity="0.0" prefHeight="25.0" prefWidth="83.0" text="Button" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnLogin" layoutX="394.0" layoutY="236.0" onAction="#btnLoginOnaction" opacity="0.09" prefHeight="25.0" prefWidth="83.0" text="Button" textFill="TRANSPARENT" />
       <JFXButton fx:id="btnBack" layoutX="21.0" layoutY="21.0" onAction="#btnBackOnaction" prefHeight="33.0" prefWidth="30.0" text="Button" textFill="TRANSPARENT" />
    </children>
 </AnchorPane>

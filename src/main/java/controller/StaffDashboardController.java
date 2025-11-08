@@ -50,8 +50,15 @@ public class StaffDashboardController {
     }
 
     @FXML
-    void btnViewProductsOnaction(ActionEvent event) {
+    void btnViewProductsOnaction(ActionEvent event) throws IOException {
 
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ProductManagementPage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Admin");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
     @FXML

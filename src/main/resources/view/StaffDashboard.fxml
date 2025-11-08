@@ -13,10 +13,10 @@
             <Image url="@../images/StaffdashboardImg.png" />
          </image>
       </ImageView>
-      <JFXButton fx:id="btnViewsales" buttonType="RAISED" layoutX="375.0" layoutY="84.0" onAction="#btnViewsalesOnaction" opacity="0.0" prefHeight="25.0" prefWidth="109.0" textFill="#00000007" />
-      <JFXButton fx:id="btnStockalerts" buttonType="RAISED" layoutX="375.0" layoutY="134.0" onAction="#btnStockalertsOnaction" opacity="0.0" prefHeight="25.0" prefWidth="109.0" textFill="#00000007" />
-      <JFXButton fx:id="btnGotopos" buttonType="RAISED" layoutX="375.0" layoutY="184.0" onAction="#btnGotoposOnaction" opacity="0.0" prefHeight="25.0" prefWidth="109.0" textFill="#00000007" />
-      <JFXButton fx:id="btnViewProducts" buttonType="RAISED" layoutX="375.0" layoutY="235.0" onAction="#btnViewProductsOnaction" opacity="0.0" prefHeight="25.0" prefWidth="109.0" textFill="#00000007" />
-      <JFXButton fx:id="btnLogout" buttonType="RAISED" layoutX="375.0" layoutY="284.0" onAction="#btnLogoutOnaction" opacity="0.0" prefHeight="25.0" prefWidth="109.0" textFill="#00000007" />
+      <JFXButton fx:id="btnViewsales" buttonType="RAISED" layoutX="375.0" layoutY="84.0" onAction="#btnViewsalesOnaction" opacity="0.05" prefHeight="25.0" prefWidth="109.0" textFill="#00000007" />
+      <JFXButton fx:id="btnStockalerts" buttonType="RAISED" layoutX="375.0" layoutY="134.0" onAction="#btnStockalertsOnaction" opacity="0.15" prefHeight="25.0" prefWidth="109.0" textFill="#00000007" />
+      <JFXButton fx:id="btnGotopos" buttonType="RAISED" layoutX="375.0" layoutY="184.0" onAction="#btnGotoposOnaction" opacity="0.15" prefHeight="25.0" prefWidth="109.0" textFill="#00000007" />
+      <JFXButton fx:id="btnViewProducts" buttonType="RAISED" layoutX="375.0" layoutY="235.0" onAction="#btnViewProductsOnaction" opacity="0.15" prefHeight="25.0" prefWidth="109.0" textFill="#00000007" />
+      <JFXButton fx:id="btnLogout" buttonType="RAISED" layoutX="375.0" layoutY="284.0" onAction="#btnLogoutOnaction" opacity="0.15" prefHeight="25.0" prefWidth="109.0" textFill="#00000007" />
    </children>
 </AnchorPane>
