@@ -1,0 +1,62 @@
+package controller;
+
+import com.jfoenix.controls.JFXButton;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
+public class StaffDashboardController {
+
+    Stage stage = new Stage();
+    @FXML
+    private JFXButton btnGotopos;
+
+    @FXML
+    private JFXButton btnLogout;
+
+    @FXML
+    private JFXButton btnStockalerts;
+
+    @FXML
+    private JFXButton btnViewProducts;
+
+    @FXML
+    private JFXButton btnViewsales;
+
+    @FXML
+    void btnGotoposOnaction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void btnLogoutOnaction(ActionEvent event) throws IOException {
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/MainWindow.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Main Window");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
+    }
+
+    @FXML
+    void btnStockalertsOnaction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void btnViewProductsOnaction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void btnViewsalesOnaction(ActionEvent event) {
+
+    }
+
+}

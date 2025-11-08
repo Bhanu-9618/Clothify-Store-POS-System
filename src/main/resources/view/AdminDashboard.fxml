@@ -13,12 +13,12 @@
             <Image url="@../images/AdmindashboardImg.png" />
          </image>
       </ImageView>
-      <JFXButton fx:id="btnViewSales" layoutX="399.0" layoutY="75.0" onAction="#btnViewSalesOnaction" prefHeight="25.0" prefWidth="126.0" textFill="TRANSPARENT" />
-      <JFXButton fx:id="btnViewProducts" layoutX="399.0" layoutY="120.0" onAction="#btnViewProductsOnaction" prefHeight="25.0" prefWidth="126.0" textFill="TRANSPARENT" />
-      <JFXButton fx:id="btnViewEmployees" layoutX="399.0" layoutY="165.0" onAction="#btnViewEmployeesOnaction" prefHeight="25.0" prefWidth="126.0" textFill="TRANSPARENT" />
-      <JFXButton fx:id="btnViewSuplliers" layoutX="399.0" layoutY="210.0" onAction="#btnViewSuplliersOnaction" prefHeight="25.0" prefWidth="126.0" textFill="TRANSPARENT" />
-      <JFXButton fx:id="btnPOS" layoutX="399.0" layoutY="300.0" onAction="#btnPOSOnaction" prefHeight="25.0" prefWidth="126.0" textFill="TRANSPARENT" />
-      <JFXButton fx:id="btnLogOut" layoutX="399.0" layoutY="346.0" onAction="#btnLogOutOnaction" prefHeight="25.0" prefWidth="126.0" textFill="TRANSPARENT" />
-      <JFXButton fx:id="btnInventory" layoutX="399.0" layoutY="256.0" onAction="#btnInventoryOnaction" prefHeight="25.0" prefWidth="126.0" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnViewSales" layoutX="399.0" layoutY="75.0" onAction="#btnViewSalesOnaction" opacity="0.0" prefHeight="25.0" prefWidth="126.0" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnViewProducts" layoutX="399.0" layoutY="120.0" onAction="#btnViewProductsOnaction" opacity="0.0" prefHeight="25.0" prefWidth="126.0" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnViewEmployees" layoutX="399.0" layoutY="165.0" onAction="#btnViewEmployeesOnaction" opacity="0.0" prefHeight="25.0" prefWidth="126.0" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnViewSuplliers" layoutX="399.0" layoutY="210.0" onAction="#btnViewSuplliersOnaction" opacity="0.0" prefHeight="25.0" prefWidth="126.0" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnPOS" layoutX="399.0" layoutY="300.0" onAction="#btnPOSOnaction" opacity="0.0" prefHeight="25.0" prefWidth="126.0" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnLogOut" layoutX="399.0" layoutY="346.0" onAction="#btnLogOutOnaction" opacity="0.0" prefHeight="25.0" prefWidth="126.0" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnInventory" layoutX="399.0" layoutY="256.0" onAction="#btnInventoryOnaction" opacity="0.0" prefHeight="25.0" prefWidth="126.0" textFill="TRANSPARENT" />
    </children>
 </AnchorPane>

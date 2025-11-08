@@ -46,7 +46,7 @@ public class LoginPageController {
     @FXML
     void btnLoginOnaction(ActionEvent event) throws IOException {
 
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/AdminDashboard.fxml"))));
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/StaffDashboard.fxml"))));
         stage.setResizable(false);
         stage.setTitle("Admin");
         stage.show();
