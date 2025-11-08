@@ -21,7 +21,7 @@ public class MainPageController {
 
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/LoginPage.fxml"))));
         stage.setResizable(false);
-        stage.setTitle("");
+        stage.setTitle("Log In");
         stage.show();
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

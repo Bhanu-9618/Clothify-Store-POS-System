@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class LoginPage {
+public class LoginPageController {
 
     Stage stage = new Stage();
 
@@ -44,8 +44,15 @@ public class LoginPage {
     }
 
     @FXML
-    void btnLoginOnaction(ActionEvent event) {
+    void btnLoginOnaction(ActionEvent event) throws IOException {
 
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/AdminDashboard.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Admin");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
 }
