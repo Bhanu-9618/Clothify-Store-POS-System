@@ -97,7 +97,7 @@ public class ProductManagementPageController {
 
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/StaffDashboard.fxml"))));
         stage.setResizable(false);
-        stage.setTitle("Log In");
+        stage.setTitle("Staff");
         stage.show();
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

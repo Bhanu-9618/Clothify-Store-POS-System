@@ -54,7 +54,7 @@ public class StaffDashboardController {
 
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ProductManagementPage.fxml"))));
         stage.setResizable(false);
-        stage.setTitle("Admin");
+        stage.setTitle("Product Management");
         stage.show();
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

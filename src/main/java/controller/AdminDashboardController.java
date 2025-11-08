@@ -61,13 +61,27 @@ public class AdminDashboardController {
     }
 
     @FXML
-    void btnViewProductsOnaction(ActionEvent event) {
+    void btnViewProductsOnaction(ActionEvent event) throws IOException {
 
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ProductManagementPage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Product Management");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
     @FXML
-    void btnViewSalesOnaction(ActionEvent event) {
+    void btnViewSalesOnaction(ActionEvent event) throws IOException {
 
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/SalesSummaryPage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Sales Summary");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
     @FXML
