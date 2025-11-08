@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="337.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainPageController">
+   <children>
+      <ImageView fitHeight="359.0" fitWidth="653.0" layoutX="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/MainWindowImg.JPG" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnLogin" layoutX="255.0" layoutY="238.0" onAction="#btnLoginOnaction" prefHeight="44.0" prefWidth="120.0" text="Button" textFill="TRANSPARENT" />
+   </children>
+</AnchorPane>
