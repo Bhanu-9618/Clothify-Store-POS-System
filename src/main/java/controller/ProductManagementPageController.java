@@ -95,9 +95,9 @@ public class ProductManagementPageController {
     @FXML
     void btnBackOnaction(ActionEvent event) throws IOException {
 
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/StaffDashboard.fxml"))));
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/AdminDashboard.fxml"))));
         stage.setResizable(false);
-        stage.setTitle("Staff");
+        stage.setTitle("Admin");
         stage.show();
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

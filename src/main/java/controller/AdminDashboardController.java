@@ -56,8 +56,15 @@ public class AdminDashboardController {
     }
 
     @FXML
-    void btnViewEmployeesOnaction(ActionEvent event) {
+    void btnViewEmployeesOnaction(ActionEvent event) throws IOException {
 
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/EmployeeManagementPage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Employee Management");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
     @FXML
