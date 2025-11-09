@@ -45,8 +45,15 @@ public class StaffDashboardController {
     }
 
     @FXML
-    void btnStockalertsOnaction(ActionEvent event) {
+    void btnStockalertsOnaction(ActionEvent event) throws IOException {
 
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/StockAlertsPage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Stock Alerts");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
     @FXML
