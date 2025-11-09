@@ -58,8 +58,15 @@ public class AdminDashboardController {
     }
 
     @FXML
-    void btnPOSOnaction(ActionEvent event) {
+    void btnPOSOnaction(ActionEvent event) throws IOException {
 
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/CheckOutPage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("CheckOut");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
     @FXML

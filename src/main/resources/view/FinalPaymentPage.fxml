@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FinalPaymentPageController">
+   <children>
+      <Label layoutX="82.0" layoutY="44.0" prefHeight="51.0" prefWidth="220.0" text=" Total                 :">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblflnaltotal" layoutX="321.0" layoutY="44.0" prefHeight="51.0" prefWidth="143.0" text="00.00">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="99.0" prefHeight="51.0" prefWidth="220.0" text="Discount %        :">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDiscount" layoutX="321.0" layoutY="109.0" prefHeight="31.0" prefWidth="93.0" />
+      <Label layoutX="88.0" layoutY="158.0" prefHeight="51.0" prefWidth="220.0" text="Net Total           :">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblFinalnettotal" layoutX="322.0" layoutY="158.0" prefHeight="51.0" prefWidth="169.0" text="00.00">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="216.0" prefHeight="51.0" prefWidth="250.0" text="Cash Received   :">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCashreceived" layoutX="321.0" layoutY="226.0" prefHeight="31.0" prefWidth="93.0" />
+      <Label layoutX="87.0" layoutY="267.0" prefHeight="51.0" prefWidth="250.0" text="Balance              :">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBalance" layoutX="322.0" layoutY="267.0" prefHeight="51.0" prefWidth="169.0" text="00.00">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnConfirm" layoutX="186.0" layoutY="329.0" onAction="#btnConfirmOnaction" prefHeight="51.0" prefWidth="127.0" text="CONFIRM">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

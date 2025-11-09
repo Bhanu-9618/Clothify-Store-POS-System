@@ -19,7 +19,7 @@
             <Image url="@../images/CheckOutImg.png" />
          </image>
       </ImageView>
-      <TableView fx:id="tblCart" layoutX="350.0" layoutY="139.0" prefHeight="182.0" prefWidth="371.0">
+      <TableView fx:id="tblCart" layoutX="357.0" layoutY="95.0" prefHeight="182.0" prefWidth="371.0">
          <columns>
             <TableColumn fx:id="colId" prefWidth="65.0" text="CartID" />
             <TableColumn fx:id="colCode" prefWidth="83.0" text="Item Code" />
@@ -41,5 +41,15 @@
       <JFXButton fx:id="btnDelete" layoutX="505.0" layoutY="350.0" onAction="#btnDeleteOnaction" opacity="0.15" prefHeight="25.0" prefWidth="75.0" textFill="TRANSPARENT" />
       <JFXButton fx:id="btnPay" layoutX="609.0" layoutY="350.0" onAction="#btnPayOnaction" opacity="0.15" prefHeight="25.0" prefWidth="75.0" textFill="TRANSPARENT" />
       <JFXButton fx:id="btnBack" layoutX="21.0" layoutY="25.0" onAction="#btnBackOnaction" opacity="0.15" prefHeight="35.0" prefWidth="42.0" textFill="TRANSPARENT" />
+      <Label fx:id="lblNettotal" layoutX="657.0" layoutY="296.0" prefHeight="25.0" prefWidth="55.0" text="00.00" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotal11" layoutX="548.0" layoutY="296.0" prefHeight="27.0" prefWidth="99.0" text="Net Total  :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

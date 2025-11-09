@@ -64,6 +64,10 @@ public class CheckoutPageController {
     private TextField txtQty;
 
     @FXML
+    private Label lblNettotal;
+
+
+    @FXML
     void btnAddOnaction(ActionEvent event) {
 
     }
@@ -86,8 +90,15 @@ public class CheckoutPageController {
     }
 
     @FXML
-    void btnPayOnaction(ActionEvent event) {
+    void btnPayOnaction(ActionEvent event) throws IOException {
 
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/FinalPaymentPage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Payment");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
     @FXML
