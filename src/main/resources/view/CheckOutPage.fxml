@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="397.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CheckoutPageController">
+   <children>
+      <ImageView fitHeight="572.0" fitWidth="743.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/CheckOutImg.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblCart" layoutX="350.0" layoutY="139.0" prefHeight="182.0" prefWidth="371.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="65.0" text="CartID" />
+            <TableColumn fx:id="colCode" prefWidth="83.0" text="Item Code" />
+            <TableColumn fx:id="colQty" prefWidth="51.0" text="Qty" />
+            <TableColumn fx:id="colPrice" text="Price" />
+            <TableColumn fx:id="colTotal" prefWidth="91.0" text="Total" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="txtCode" focusColor="#405aa800" layoutX="65.0" layoutY="95.0" prefHeight="25.0" prefWidth="145.0" unFocusColor="#4d4d4d00" />
+      <TextField fx:id="txtQty" layoutX="155.0" layoutY="271.0" prefHeight="17.0" prefWidth="55.0" />
+      <Label fx:id="lblTotal" layoutX="155.0" layoutY="303.0" prefHeight="25.0" prefWidth="55.0" text="00.00" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnSearch" layoutX="249.0" layoutY="95.0" onAction="#btnSearchOnaction" opacity="0.15" prefHeight="25.0" prefWidth="75.0" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnAdd" layoutX="127.0" layoutY="350.0" onAction="#btnAddOnaction" opacity="0.15" prefHeight="25.0" prefWidth="75.0" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnUpdate" layoutX="399.0" layoutY="350.0" onAction="#btnUpdateOnaction" opacity="0.15" prefHeight="25.0" prefWidth="75.0" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnDelete" layoutX="505.0" layoutY="350.0" onAction="#btnDeleteOnaction" opacity="0.15" prefHeight="25.0" prefWidth="75.0" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnPay" layoutX="609.0" layoutY="350.0" onAction="#btnPayOnaction" opacity="0.15" prefHeight="25.0" prefWidth="75.0" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnBack" layoutX="21.0" layoutY="25.0" onAction="#btnBackOnaction" opacity="0.15" prefHeight="35.0" prefWidth="42.0" textFill="TRANSPARENT" />
+   </children>
+</AnchorPane>
