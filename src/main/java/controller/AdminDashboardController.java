@@ -92,8 +92,15 @@ public class AdminDashboardController {
     }
 
     @FXML
-    void btnViewSuplliersOnaction(ActionEvent event) {
+    void btnViewSuplliersOnaction(ActionEvent event) throws IOException {
 
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/SupplierManagementPage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Supplier Management");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
 }
