@@ -35,8 +35,15 @@ public class AdminDashboardController {
     private JFXButton btnViewSuplliers;
 
     @FXML
-    void btnInventoryOnaction(ActionEvent event) {
+    void btnInventoryOnaction(ActionEvent event) throws IOException {
 
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/InventoryPage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Inventory");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
     @FXML

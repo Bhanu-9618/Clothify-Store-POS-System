@@ -9,7 +9,6 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="371.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProductManagementPageController">
    <children>
       <ImageView fitHeight="447.0" fitWidth="668.0" pickOnBounds="true" preserveRatio="true">
@@ -28,7 +27,7 @@
             <TableColumn fx:id="colSprice" prefWidth="94.0" text="Selling Price" />
         </columns>
       </TableView>
-      <ComboBox fx:id="comboCat" layoutX="35.0" layoutY="78.0" onAction="#comboCatOnaction" prefHeight="25.0" prefWidth="145.0" promptText="Search By Category" />
+      <ComboBox fx:id="comboCat" layoutX="35.0" layoutY="78.0" onAction="#comboCatOnaction" prefHeight="25.0" prefWidth="145.0" promptText="Filter By Category" />
       <JFXButton fx:id="btnSearchCat" layoutX="196.0" layoutY="76.0" onAction="#btnSearchCatOnaction" opacity="0.1" text="Button" textFill="TRANSPARENT" />
       <JFXButton fx:id="btnShowall" layoutX="274.0" layoutY="77.0" onAction="#btnShowallOnaction" opacity="0.1" prefHeight="25.0" prefWidth="58.0" text="Button" textFill="TRANSPARENT" />
       <JFXButton fx:id="btnSearchItemcode" layoutX="598.0" layoutY="76.0" onAction="#btnSearchItemcodeOnaction" opacity="0.1" prefHeight="25.0" prefWidth="46.0" text="Button" textFill="TRANSPARENT" />
