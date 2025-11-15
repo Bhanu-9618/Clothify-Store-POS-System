@@ -56,8 +56,15 @@ public class EmployeeManagementPageController {
     private JFXTextField txtId;
 
     @FXML
-    void btnAddOnaction(ActionEvent event) {
+    void btnAddOnaction(ActionEvent event) throws IOException {
 
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/AddEmployeePage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Add Employee");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
     @FXML

@@ -116,13 +116,6 @@ public class CheckoutPageController {
     @FXML
     void btnUpdateOnaction(ActionEvent event) throws IOException {
 
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/UpdateProductPage.fxml"))));
-        stage.setResizable(false);
-        stage.setTitle("Update");
-        stage.show();
-
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.close();
     }
 
 }

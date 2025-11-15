@@ -63,8 +63,15 @@ public class ProductManagementPageController {
     private JFXTextField txtItemCode;
 
     @FXML
-    void btnDeleteOnaction(ActionEvent event) {
+    void btnDeleteOnaction(ActionEvent event) throws IOException {
 
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/DeleteProductPage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Delete Product");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
     @FXML
@@ -83,8 +90,15 @@ public class ProductManagementPageController {
     }
 
     @FXML
-    void btnUpdateOnaction(ActionEvent event) {
+    void btnUpdateOnaction(ActionEvent event) throws IOException {
 
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/UpdateProductPage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Product Management");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
     @FXML

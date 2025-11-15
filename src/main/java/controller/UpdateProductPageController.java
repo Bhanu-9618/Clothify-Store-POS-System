@@ -44,9 +44,9 @@ public class UpdateProductPageController {
     @FXML
     void btnBackOnaction(ActionEvent event) throws IOException {
 
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/CheckOutPage.fxml"))));
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ProductManagementPage.fxml"))));
         stage.setResizable(false);
-        stage.setTitle("Checkout");
+        stage.setTitle("Product Management");
         stage.show();
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -56,9 +56,9 @@ public class UpdateProductPageController {
     @FXML
     void btnUpdateOnaction(ActionEvent event) throws IOException {
 
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/CheckOutPage.fxml"))));
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ProductManagementPage.fxml"))));
         stage.setResizable(false);
-        stage.setTitle("Checkout");
+        stage.setTitle("Product Management");
         stage.show();
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
