@@ -10,12 +10,15 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.stage.Stage;
+import service.LoginPageService;
+import service.impl.LoginPageServiceImpl;
 
 import java.io.IOException;
 
 public class LoginPageController {
 
     Stage stage = new Stage();
+    LoginPageService loginPageService = new LoginPageServiceImpl();
 
     @FXML
     private JFXButton btnBack;
@@ -45,6 +48,8 @@ public class LoginPageController {
 
     @FXML
     void btnLoginOnaction(ActionEvent event) throws IOException {
+
+        loginPageService.checkEmail(txtEmail.getText());
 
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/AdminDashboard.fxml"))));
         stage.setResizable(false);
