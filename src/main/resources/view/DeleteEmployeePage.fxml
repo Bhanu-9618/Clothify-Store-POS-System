@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="393.0" prefWidth="494.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DeleteEmployeePageController">
+   <children>
+      <ImageView fitHeight="427.0" fitWidth="494.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/DeleteEmployeeImg.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtDeleteID" layoutX="247.0" layoutY="153.0" />
+      <JFXButton fx:id="btnDelete" layoutX="194.0" layoutY="302.0" onAction="#btnDeleteOnaction" opacity="0.16" prefHeight="25.0" prefWidth="105.0" text="Button" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnBack" layoutX="30.0" layoutY="22.0" onAction="#btnBackOnaction" prefHeight="31.0" prefWidth="32.0" textFill="TRANSPARENT" />
+   </children>
+</AnchorPane>
