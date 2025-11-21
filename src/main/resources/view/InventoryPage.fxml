@@ -8,7 +8,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="369.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InventoryPageController">
    <children>
@@ -38,5 +38,10 @@
       <JFXButton fx:id="btnBack" layoutX="23.0" layoutY="22.0" onAction="#btnBackOnaction" opacity="0.15" prefHeight="34.0" prefWidth="34.0" text="Button" textFill="TRANSPARENT" />
       <ComboBox fx:id="comboCat" layoutX="38.0" layoutY="88.0" prefHeight="25.0" prefWidth="141.0" promptText="Filter By Category" />
       <JFXTextField fx:id="txtItemCode" focusColor="#405aa800" layoutX="423.0" layoutY="88.0" prefHeight="25.0" prefWidth="141.0" unFocusColor="#4d4d4d00" />
+      <JFXButton fx:id="btnReload" layoutX="608.0" layoutY="337.0" onAction="#btnReloadOnaction" text="Refresh" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
    </children>
 </AnchorPane>

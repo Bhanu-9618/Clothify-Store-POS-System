@@ -56,6 +56,9 @@ public class EmployeeManagementPageController {
     private JFXTextField txtId;
 
     @FXML
+    private JFXButton btnReload;
+
+    @FXML
     void btnAddOnaction(ActionEvent event) throws IOException {
 
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/AddEmployeePage.fxml"))));
@@ -80,8 +83,15 @@ public class EmployeeManagementPageController {
     }
 
     @FXML
-    void btnDeleteOnaction(ActionEvent event) {
+    void btnDeleteOnaction(ActionEvent event) throws IOException {
 
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/DeleteEmployeePage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Delete Employee");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
     @FXML
@@ -101,4 +111,6 @@ public class EmployeeManagementPageController {
         stage.close();
     }
 
+    public void btnReloadOnaction(ActionEvent event) {
+    }
 }

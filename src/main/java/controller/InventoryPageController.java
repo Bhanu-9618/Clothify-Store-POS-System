@@ -72,8 +72,18 @@ public class InventoryPageController {
     private JFXTextField txtItemCode;
 
     @FXML
-    void btnAddOnaction(ActionEvent event) {
+    private JFXButton btnReload;
 
+    @FXML
+    void btnAddOnaction(ActionEvent event) throws IOException {
+
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/AddItemPage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Add Item");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
     @FXML
@@ -113,4 +123,6 @@ public class InventoryPageController {
 
     }
 
+    public void btnReloadOnaction(ActionEvent event) {
+    }
 }

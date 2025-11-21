@@ -53,8 +53,18 @@ public class SupplierManagementPageController {
     private JFXTextField txtId;
 
     @FXML
-    void btnAddOnaction(ActionEvent event) {
+    private JFXButton btnReload;
 
+    @FXML
+    void btnAddOnaction(ActionEvent event) throws IOException {
+
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/AddSupplierPage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Add Supplier");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
     @FXML
@@ -70,8 +80,15 @@ public class SupplierManagementPageController {
     }
 
     @FXML
-    void btnDeleteOnaction(ActionEvent event) {
+    void btnDeleteOnaction(ActionEvent event) throws IOException {
 
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/DeleteSupplierPage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Delete Supplier");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
     @FXML
@@ -80,8 +97,17 @@ public class SupplierManagementPageController {
     }
 
     @FXML
-    void btnUpdateOnaction(ActionEvent event) {
+    void btnUpdateOnaction(ActionEvent event) throws IOException {
 
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/UpdateSupplierPage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Update Supplier");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
+    public void btnReloadOnaction(ActionEvent event) {
+    }
 }
