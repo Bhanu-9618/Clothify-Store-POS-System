@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="401.0" prefWidth="348.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DeleteCartItemPageController">
+   <children>
+      <ImageView fitHeight="408.0" fitWidth="475.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/DeleteCartitemImg.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtCartID" layoutX="238.0" layoutY="146.0" />
+      <JFXButton fx:id="btnBack" layoutX="29.0" layoutY="19.0" onAction="#btnBackOnaction" prefHeight="31.0" prefWidth="32.0" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnDelete" layoutX="191.0" layoutY="286.0" onAction="#btnDeleteOnAction" opacity="0.16" prefHeight="31.0" prefWidth="94.0" textFill="TRANSPARENT" />
+   </children>
+</AnchorPane>

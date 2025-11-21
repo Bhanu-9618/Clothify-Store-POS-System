@@ -34,9 +34,6 @@ public class CheckoutPageController {
     private JFXButton btnSearch;
 
     @FXML
-    private JFXButton btnUpdate;
-
-    @FXML
     private TableColumn<?, ?> colCode;
 
     @FXML
@@ -87,6 +84,13 @@ public class CheckoutPageController {
     @FXML
     void btnDeleteOnaction(ActionEvent event) throws IOException {
 
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/DeleteCartItemPage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Delete");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
     @FXML
@@ -103,11 +107,6 @@ public class CheckoutPageController {
 
     @FXML
     void btnSearchOnaction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void btnUpdateOnaction(ActionEvent event) throws IOException {
 
     }
 

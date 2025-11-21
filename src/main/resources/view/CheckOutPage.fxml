@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="397.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CheckoutPageController">
    <children>
       <ImageView fitHeight="572.0" fitWidth="743.0" pickOnBounds="true" preserveRatio="true">
@@ -37,7 +36,6 @@
       </Label>
       <JFXButton fx:id="btnSearch" layoutX="249.0" layoutY="95.0" onAction="#btnSearchOnaction" opacity="0.15" prefHeight="25.0" prefWidth="75.0" textFill="TRANSPARENT" />
       <JFXButton fx:id="btnAdd" layoutX="127.0" layoutY="350.0" onAction="#btnAddOnaction" opacity="0.15" prefHeight="25.0" prefWidth="75.0" textFill="TRANSPARENT" />
-      <JFXButton fx:id="btnUpdate" layoutX="399.0" layoutY="350.0" onAction="#btnUpdateOnaction" opacity="0.15" prefHeight="25.0" prefWidth="75.0" textFill="TRANSPARENT" />
       <JFXButton fx:id="btnDelete" layoutX="505.0" layoutY="350.0" onAction="#btnDeleteOnaction" opacity="0.15" prefHeight="25.0" prefWidth="75.0" textFill="TRANSPARENT" />
       <JFXButton fx:id="btnPay" layoutX="609.0" layoutY="350.0" onAction="#btnPayOnaction" opacity="0.15" prefHeight="25.0" prefWidth="75.0" textFill="TRANSPARENT" />
       <JFXButton fx:id="btnBack" layoutX="21.0" layoutY="25.0" onAction="#btnBackOnaction" opacity="0.15" prefHeight="35.0" prefWidth="42.0" textFill="TRANSPARENT" />
