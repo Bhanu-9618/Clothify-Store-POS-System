@@ -1,5 +1,9 @@
 package service;
 
+import model.dto.Employee;
+import model.dto.Login;
+import java.sql.SQLException;
+
 public interface LoginPageService {
-    void checkEmail(String text);
+    Employee checkEmail(Login login) throws SQLException;
 }
