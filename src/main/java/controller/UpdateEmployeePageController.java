@@ -7,19 +7,26 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class AddEmployeePageController {
+public class UpdateEmployeePageController {
 
     Stage stage = new Stage();
     @FXML
-    private JFXButton btnAdd;
+    private JFXButton btnBack;
 
     @FXML
-    private JFXButton btnBack;
+    private JFXButton btnUpdate;
+
+    @FXML
+    private JFXComboBox<?> comboRole;
+
+    @FXML
+    private Label lblId;
 
     @FXML
     private TextField txtContact;
@@ -37,14 +44,11 @@ public class AddEmployeePageController {
     private TextField txtPassword;
 
     @FXML
-    private JFXComboBox<?> comboRole;
+    void btnBackOnaction(ActionEvent event) throws IOException {
 
-    @FXML
-    void btnAddOnaction(ActionEvent event) throws IOException {
-
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/EmployeeManagementPage.fxml"))));
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/AdminDashboard.fxml"))));
         stage.setResizable(false);
-        stage.setTitle("Employee Management");
+        stage.setTitle("Admin");
         stage.show();
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -52,15 +56,8 @@ public class AddEmployeePageController {
     }
 
     @FXML
-    void btnBackOnaction(ActionEvent event) throws IOException {
+    void btnUpdateOnaction(ActionEvent event) {
 
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/EmployeeManagementPage.fxml"))));
-        stage.setResizable(false);
-        stage.setTitle("Employee Management");
-        stage.show();
-
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.close();
     }
 
 }

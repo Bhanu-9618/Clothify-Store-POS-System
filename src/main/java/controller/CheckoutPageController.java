@@ -87,13 +87,6 @@ public class CheckoutPageController {
     @FXML
     void btnDeleteOnaction(ActionEvent event) throws IOException {
 
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/DeleteProductPage.fxml"))));
-        stage.setResizable(false);
-        stage.setTitle("Delete");
-        stage.show();
-
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.close();
     }
 
     @FXML

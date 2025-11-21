@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="477.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateEmployeePageController">
+   <children>
+      <ImageView fitHeight="558.0" fitWidth="583.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/UpdateEmployeeImg.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtName" layoutX="314.0" layoutY="140.0" />
+      <TextField fx:id="txtGender" layoutX="314.0" layoutY="185.0" />
+      <TextField fx:id="txtEmail" layoutX="314.0" layoutY="231.0" />
+      <TextField fx:id="txtPassword" layoutX="314.0" layoutY="278.0" />
+      <TextField fx:id="txtContact" layoutX="314.0" layoutY="326.0" />
+      <JFXComboBox fx:id="comboRole" layoutX="314.0" layoutY="368.0" prefHeight="25.0" prefWidth="149.0" promptText="Role" />
+      <Label fx:id="lblId" layoutX="314.0" layoutY="90.0" prefHeight="25.0" prefWidth="149.0" text="####">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnBack" layoutX="32.0" layoutY="17.0" onAction="#btnBackOnaction" prefHeight="31.0" prefWidth="32.0" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnUpdate" layoutX="248.0" layoutY="428.0" onAction="#btnUpdateOnaction" opacity="0.16" prefHeight="31.0" prefWidth="111.0" textFill="TRANSPARENT" />
+   </children>
+</AnchorPane>

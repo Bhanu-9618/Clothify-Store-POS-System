@@ -29,7 +29,15 @@ public class StaffDashboardController {
     private JFXButton btnViewsales;
 
     @FXML
-    void btnGotoposOnaction(ActionEvent event) {
+    void btnGotoposOnaction(ActionEvent event) throws IOException {
+
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/CheckOutPage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Product Management");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
 
     }
 
@@ -69,8 +77,15 @@ public class StaffDashboardController {
     }
 
     @FXML
-    void btnViewsalesOnaction(ActionEvent event) {
+    void btnViewsalesOnaction(ActionEvent event) throws IOException {
 
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/SalesSummaryPage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Sales Summary");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
 }

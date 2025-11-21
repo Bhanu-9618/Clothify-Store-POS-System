@@ -90,8 +90,15 @@ public class EmployeeManagementPageController {
     }
 
     @FXML
-    void btnUpdateOnaction(ActionEvent event) {
+    void btnUpdateOnaction(ActionEvent event) throws IOException {
 
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/UpdateEmployeePage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Update Employee");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
 }
