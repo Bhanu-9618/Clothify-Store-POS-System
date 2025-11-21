@@ -119,8 +119,15 @@ public class InventoryPageController {
     }
 
     @FXML
-    void btnUpdateOnaction(ActionEvent event) {
+    void btnUpdateOnaction(ActionEvent event) throws IOException {
 
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/UpdateItemPage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Update Item");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
     public void btnReloadOnaction(ActionEvent event) {
