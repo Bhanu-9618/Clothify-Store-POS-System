@@ -99,8 +99,15 @@ public class InventoryPageController {
     }
 
     @FXML
-    void btnDeleteOnaction(ActionEvent event) {
+    void btnDeleteOnaction(ActionEvent event) throws IOException {
 
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/DeleteItemPage.fxml"))));
+        stage.setResizable(false);
+        stage.setTitle("Delete Item");
+        stage.show();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 
     @FXML
