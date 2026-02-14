@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="479.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddEmployeePageController">
+   <children>
+      <ImageView fitHeight="479.0" fitWidth="636.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/AddEmployeeImg.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtName" layoutX="309.0" layoutY="109.0" />
+      <TextField fx:id="txtGender" layoutX="309.0" layoutY="161.0" />
+      <TextField fx:id="txtEmail" layoutX="309.0" layoutY="211.0" />
+      <TextField fx:id="txtPassword" layoutX="309.0" layoutY="262.0" />
+      <TextField fx:id="txtContact" layoutX="309.0" layoutY="312.0" />
+      <JFXButton fx:id="btnBack" layoutX="31.0" layoutY="17.0" onAction="#btnBackOnaction" prefHeight="31.0" prefWidth="32.0" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnAdd" layoutX="244.0" layoutY="406.0" onAction="#btnAddOnaction" opacity="0.16" prefHeight="31.0" prefWidth="111.0" textFill="TRANSPARENT" />
+      <JFXComboBox fx:id="comboRole" layoutX="392.0" layoutY="346.0" promptText="Role" />
+   </children>
+</AnchorPane>

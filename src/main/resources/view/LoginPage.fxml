@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="335.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginPageController">
+   <children>
+      <ImageView fitHeight="347.0" fitWidth="608.0" layoutX="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/LoginpageImg.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtEmail" focusColor="#405aa800" layoutX="342.0" layoutY="124.0" prefHeight="19.0" prefWidth="186.0" unFocusColor="#4d4d4d00" />
+      <JFXPasswordField fx:id="txtPassword" focusColor="#405aa800" layoutX="342.0" layoutY="184.0" prefHeight="25.0" prefWidth="186.0" unFocusColor="#4d4d4d00" />
+      <JFXButton fx:id="btnLogin" layoutX="394.0" layoutY="236.0" onAction="#btnLoginOnaction" opacity="0.09" prefHeight="25.0" prefWidth="83.0" text="Button" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnBack" layoutX="21.0" layoutY="21.0" onAction="#btnBackOnaction" prefHeight="33.0" prefWidth="30.0" text="Button" textFill="TRANSPARENT" />
+   </children>
+</AnchorPane>

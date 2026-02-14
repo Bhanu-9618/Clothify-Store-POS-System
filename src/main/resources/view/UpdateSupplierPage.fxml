@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="395.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateSupplierPageController">
+   <children>
+      <ImageView fitHeight="438.0" fitWidth="531.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/UpdateSupplierImg.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtName" layoutX="288.0" layoutY="151.0" />
+      <TextField fx:id="txtEmail" layoutX="287.0" layoutY="194.0" />
+      <TextField fx:id="txtContact" layoutX="286.0" layoutY="239.0" />
+      <TextField fx:id="txtAddress" layoutX="285.0" layoutY="283.0" />
+      <Label fx:id="lblId" layoutX="289.0" layoutY="107.0" prefHeight="25.0" prefWidth="149.0" text="####">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnUpdate" layoutX="227.0" layoutY="369.0" onAction="#btnUpdateOnaction" opacity="0.16" prefHeight="34.0" prefWidth="94.0" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnBack" layoutX="52.0" layoutY="23.0" onAction="#btnBackOnaction" prefHeight="31.0" prefWidth="32.0" textFill="TRANSPARENT" />
+   </children>
+</AnchorPane>

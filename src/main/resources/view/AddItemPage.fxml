@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="561.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddItemPageController">
+   <children>
+      <ImageView fitHeight="584.0" fitWidth="487.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/AddItemImg.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtName" layoutX="268.0" layoutY="108.0" />
+      <TextField fx:id="txtSupplier" layoutX="268.0" layoutY="195.0" />
+      <TextField fx:id="txtPurchasePrice" layoutX="268.0" layoutY="280.0" />
+      <TextField fx:id="txtSellingPrice" layoutX="268.0" layoutY="326.0" />
+      <TextField fx:id="txtStockQty" layoutX="268.0" layoutY="369.0" />
+      <TextField fx:id="txtReorderlevel" layoutX="268.0" layoutY="412.0" />
+      <JFXComboBox fx:id="comboCat" layoutX="268.0" layoutY="150.0" prefHeight="25.0" prefWidth="149.0" />
+      <JFXComboBox fx:id="comboSize" layoutX="268.0" layoutY="236.0" prefHeight="25.0" prefWidth="149.0" />
+      <JFXButton fx:id="btnBack" layoutX="47.0" layoutY="22.0" onAction="#btnBackOnaction" prefHeight="31.0" prefWidth="32.0" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnAdd" layoutX="197.0" layoutY="521.0" onAction="#btnAddOnaction" opacity="0.16" prefHeight="31.0" prefWidth="94.0" textFill="TRANSPARENT" />
+   </children>
+</AnchorPane>

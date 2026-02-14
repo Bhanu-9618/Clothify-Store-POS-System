@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="578.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateItemPageController">
+   <children>
+      <ImageView fitHeight="584.0" fitWidth="487.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/UpdateItemImg.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtName" layoutX="264.0" layoutY="139.0" />
+      <TextField fx:id="txtSupplier" layoutX="264.0" layoutY="226.0" />
+      <TextField fx:id="txtPurchasePrice" layoutX="264.0" layoutY="311.0" />
+      <TextField fx:id="txtSellingPrice" layoutX="264.0" layoutY="357.0" />
+      <TextField fx:id="txtStockQty" layoutX="264.0" layoutY="400.0" />
+      <TextField fx:id="txtReorderlevel" layoutX="264.0" layoutY="443.0" />
+      <JFXComboBox fx:id="comboCat" layoutX="264.0" layoutY="181.0" prefHeight="25.0" prefWidth="149.0" />
+      <JFXComboBox fx:id="comboSize" layoutX="264.0" layoutY="267.0" prefHeight="25.0" prefWidth="149.0" />
+      <JFXButton fx:id="btnBack" layoutX="48.0" layoutY="21.0" onAction="#btnBackOnaction" prefHeight="31.0" prefWidth="32.0" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnUpdate" layoutX="197.0" layoutY="523.0" onAction="#btnUpdateOnaction" opacity="0.16" prefHeight="31.0" prefWidth="94.0" textFill="TRANSPARENT" />
+      <Label fx:id="lblItemCode" layoutX="264.0" layoutY="95.0" prefHeight="25.0" prefWidth="149.0" text="####">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

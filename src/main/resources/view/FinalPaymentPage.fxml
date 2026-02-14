@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="433.0" prefWidth="492.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FinalPaymentPageController">
+   <children>
+      <ImageView fitHeight="433.0" fitWidth="545.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/FinalPaymentImg.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblTotal" layoutX="371.0" layoutY="98.0" text="00.00">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDiscount" layoutX="369.0" layoutY="143.0" prefHeight="25.0" prefWidth="43.0" />
+      <Label layoutX="240.0" layoutY="143.0" text="\%">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNetTotal" layoutX="369.0" layoutY="189.0" text="00.00" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCashReceived" layoutX="369.0" layoutY="232.0" prefHeight="25.0" prefWidth="43.0" />
+      <Label fx:id="lblbalance" layoutX="371.0" layoutY="281.0" text="00.00">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnConfirm" layoutX="222.0" layoutY="377.0" onAction="#btnConfirmOnaction" opacity="0.15" prefHeight="25.0" prefWidth="79.0" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnBack" layoutX="28.0" layoutY="15.0" onAction="#btnBackOnaction" opacity="0.15" prefHeight="25.0" prefWidth="29.0" textFill="TRANSPARENT" />
+   </children>
+</AnchorPane>

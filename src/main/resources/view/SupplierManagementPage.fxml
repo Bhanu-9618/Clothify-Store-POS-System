@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="345.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SupplierManagementPageController">
+   <children>
+      <ImageView fitHeight="383.0" fitWidth="677.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/SupplierManagementImg.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblSuppliers" layoutX="24.0" layoutY="123.0" prefHeight="175.0" prefWidth="629.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="82.0" text="Supplier ID" />
+            <TableColumn fx:id="colName" prefWidth="121.0" text="Supplier Name" />
+            <TableColumn fx:id="colEmail" prefWidth="149.0" text="Email" />
+            <TableColumn fx:id="colContact" prefWidth="119.0" text="Contact" />
+            <TableColumn fx:id="colAddress" prefWidth="158.0" text="Address" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnSearch" layoutX="581.0" layoutY="84.0" onAction="#btnSearchOnaction" opacity="0.15" prefHeight="25.0" prefWidth="68.0" text="Button" textFill="TRANSPARENT" />
+      <JFXTextField fx:id="txtId" focusColor="#405aa800" layoutX="406.0" layoutY="84.0" unFocusColor="#4d4d4d00" />
+      <JFXButton fx:id="btnBack" layoutX="24.0" layoutY="21.0" onAction="#btnBackOnaction" opacity="0.15" prefHeight="34.0" prefWidth="32.0" text="Button" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnAdd" layoutX="224.0" layoutY="314.0" onAction="#btnAddOnaction" opacity="0.15" prefHeight="25.0" prefWidth="57.0" text="Button" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnUpdate" layoutX="310.0" layoutY="315.0" onAction="#btnUpdateOnaction" opacity="0.15" prefHeight="25.0" prefWidth="57.0" text="Button" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnDelete" layoutX="395.0" layoutY="315.0" onAction="#btnDeleteOnaction" opacity="0.15" prefHeight="25.0" prefWidth="57.0" text="Button" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnReload" layoutX="581.0" layoutY="324.0" onAction="#btnReloadOnaction" text="Refresh" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

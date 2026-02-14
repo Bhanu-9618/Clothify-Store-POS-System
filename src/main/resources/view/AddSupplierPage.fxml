@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="402.0" prefWidth="491.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddSupplierPageController">
+   <children>
+      <ImageView fitHeight="449.0" fitWidth="491.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/AddSupplierImg.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtName" layoutX="263.0" layoutY="124.0" />
+      <TextField fx:id="txtEmail" layoutX="263.0" layoutY="167.0" />
+      <TextField fx:id="txtContact" layoutX="263.0" layoutY="209.0" />
+      <TextField fx:id="txtAddress" layoutX="263.0" layoutY="249.0" />
+      <JFXButton fx:id="btnBack" layoutX="48.0" layoutY="21.0" onAction="#btnBackOnaction" prefHeight="31.0" prefWidth="32.0" textFill="TRANSPARENT" />
+      <JFXButton fx:id="btnAdd" layoutX="207.0" layoutY="348.0" onAction="#btnAddOnaction" opacity="0.16" prefHeight="25.0" prefWidth="97.0" textFill="TRANSPARENT" />
+   </children>
+</AnchorPane>
