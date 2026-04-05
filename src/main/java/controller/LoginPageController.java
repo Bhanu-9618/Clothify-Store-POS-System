@@ -13,13 +13,10 @@ import javafx.scene.control.ComboBox;
 import javafx.stage.Stage;
 import model.dto.Employee;
 import model.dto.Login;
-import repository.EmployeeManagementPageRepository;
-import repository.impl.EmployeeManagementPageRepositoryImpl;
 import service.LoginPageService;
 import service.impl.LoginPageServiceImpl;
 
 import java.io.IOException;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class LoginPageController {
@@ -41,6 +38,8 @@ public class LoginPageController {
 
     @FXML
     private JFXPasswordField txtPassword;
+
+    public static Long id = Long.valueOf(0);
 
     @FXML
     void btnBackOnaction(ActionEvent event) throws IOException {
@@ -69,6 +68,7 @@ public class LoginPageController {
             alert.showAndWait();
         }else {
 
+            id = employee.getEmployeeId();
             if (employee.getRole().equals("Admin")) {
 
                 stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/AdminDashboard.fxml"))));
@@ -80,6 +80,8 @@ public class LoginPageController {
                 stage.close();
 
             } else if (employee.getRole().equals("Staff")) {
+
+
                 stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/StaffDashboard.fxml"))));
                 stage.setResizable(false);
                 stage.setTitle("Staff");
@@ -89,5 +91,6 @@ public class LoginPageController {
                 stage.close();
             }
         }
+
     }
 }

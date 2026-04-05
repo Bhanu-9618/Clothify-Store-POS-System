@@ -14,10 +14,12 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class CheckoutPageController {
 
     Stage stage = new Stage();
+
     @FXML
     private JFXButton btnAdd;
 
@@ -63,10 +65,12 @@ public class CheckoutPageController {
     @FXML
     private Label lblNettotal;
 
+    public CheckoutPageController() throws SQLException, IOException {
+    }
+
 
     @FXML
     void btnAddOnaction(ActionEvent event) {
-
     }
 
     @FXML
