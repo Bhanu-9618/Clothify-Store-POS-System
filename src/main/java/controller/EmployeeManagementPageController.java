@@ -112,5 +112,6 @@ public class EmployeeManagementPageController {
     }
 
     public void btnReloadOnaction(ActionEvent event) {
+
     }
 }

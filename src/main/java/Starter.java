@@ -8,7 +8,6 @@ public class Starter extends Application {
         launch(args);
     }
 
-
     @Override
     public void start(Stage stage) throws Exception {
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/MainWindow.fxml"))));
